@@ -1,0 +1,47 @@
+body {
+    padding: 0; /* Elimina cualquier espacio de relleno alrededor del contenido del body */
+    margin: 0; /* Elimina cualquier margen alrededor del body */
+    display: flex; /* Aplica flexbox para centrar el contenido en pantalla */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100vw; /* Ancho del body igual al ancho total de la ventana */
+    height: 100vh; /* Alto del body igual al alto total de la ventana */
+    background-color: black; /* Fondo negro para el estilo del juego */
+}
+
+#container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: red; /* Define el color del texto como rojo */
+}
+
+.btn {
+    color: red; /* Color del texto de los botones en rojo */
+    background-color: black; /* Fondo negro para los botones */
+    border-radius: 20px; /* Bordes redondeados en los botones */
+    font-size: 20px; /* Tamaño de la fuente del texto dentro de los botones */
+    padding: 10px; /* Espaciado interno para que el botón tenga más área clickable */
+    cursor: pointer; /* Cambia el cursor a "pointer" al pasar por encima (indica que es clickable) */
+    border: 1px solid red; /* Bordes rojos alrededor del botón */
+    margin: 5px; /* Espacio entre los botones */
+}
+
+.btn-grid {
+    display: grid; /* Define un contenedor de cuadrícula para organizar los botones */
+    grid-template-columns: repeat(2, auto); /* Organiza los botones en dos columnas */
+    gap: 10px; /* Espacio entre cada botón en la cuadrícula */
+    margin-top: 20px; /* Espacio adicional en la parte superior del grupo de botones */
+}
+
+#text {
+    text-align: center; /* Centra el texto */
+    color: red; /* Color rojo para el texto del chatbot */
+    font-size: 30px; /* Tamaño de fuente del texto del chatbot */
+    font-family: monospace; /* Fuente de estilo monoespaciado para darle un toque retro */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    border-right: 3px solid black; /* Añade una barra negra simulando un cursor */
+    animation: blink 0.7s steps(1) infinite; /* Aplica una animación para parpadear el cursor */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; } /* Hace que el cursor desaparezca al 50% del ciclo de animación */
+}
